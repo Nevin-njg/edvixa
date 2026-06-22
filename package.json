@@ -1,0 +1,23 @@
+{
+  "name": "edvixa",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:api": "npm run dev --workspace=@edvixa/api",
+    "dev:web": "npm run dev --workspace=@edvixa/web",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest",
+    "typescript": "latest"
+  }
+}
